@@ -1,13 +1,16 @@
+/* This is the universal selector, all HTML elements will have the following styles */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* The body element will have the background color #d9dcd6 */
 body {
     background-color: #d9dcd6;
 }
 
+/* Elements with the class "header" will have the following styles */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +18,18 @@ body {
     color: #ffffff;
 }
 
+/* "h1" elements within the "header" class will have the following styles */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* "seo" class inside the "h1" element inside the "header" class will have the color #d9dcd6 applied */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* "div" elements inside the "header" class will have the following styles */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,24 +38,29 @@ body {
     font-size: 20px;
 }
 
+/* "ul" elements inside the "div" element inside the "header" class will have the following styles */
 .header div ul {
     list-style-type: none;
 }
 
+/* "li" element inside the "ul" element inside the the "div" element inside the "header" class will have the following styles */
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* "anchor" elements will have the background color of #ffffff */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* paragraphs will have the font size 16px */
 p {
     font-size: 16px;
 }
 
+/* elements with the "hero" class will have the following styles, including a background image */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,22 +70,26 @@ p {
     background-position: center;
 }
 
+/* elements with the "float-left" class will have the following styles - image floats left on the page */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* elements with the "float-right" class will have the following styles - image floats right on the page*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* elements with the "content" class will have the following styles - inline-block allows width and height to be applied */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* elements with the "benefits" class will have the following styles - image floats to the right of the "content" class */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,55 +101,27 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* elements with the "benefit" class will have the color of #ffffff and a margin at the bottom of 32px*/
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* "h3" elements inside the "benefit" class will have a margin of 10px at the bottom and the text is centered*/
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* the "img" elements inside the "benefit" class will have the following sizing and display */
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* the "search-online-social" class will have the following sizing, font and colors */
+.search-online-social {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,58 +130,25 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* the "img" elements inside the "search-online-social" class will have the max-height of 200px */
+.search-online-social img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* "h2" elements inside the "search-online-social" class text will have the font size of 36px, and have a margin at the bottom of 20px */
+.search-online-social h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* "footer" class will have the following elements */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
+/* "h2" elements inside the "footer" class the text font size will be 20px */
 .footer h2 {
     font-size: 20px;
 }
